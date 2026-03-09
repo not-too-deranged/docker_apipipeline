@@ -17,4 +17,4 @@ Dieses Projekt sammelt Daten aus öffentlichen APIs mit Apache Airflow und visua
 ## Start
 
 ```bash
-docker compose up
+docker compose up -d
