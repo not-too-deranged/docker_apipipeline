@@ -1,1 +1,6 @@
-
+apache-airflow
+streamlit
+pandas
+requests
+psycopg2-binary
+pytest
