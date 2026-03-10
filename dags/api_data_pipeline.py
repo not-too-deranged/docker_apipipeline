@@ -3,8 +3,8 @@ from airflow.operators.python import PythonOperator
 from datetime import datetime
 import requests
 
-def fetch_weather():
-    r = requests.get("https://api.openweathermap.org/data/2.5/weather?q=Berlin")
+def fetch_nasa():
+    r = requests.get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
     print(r.json())
 
 def fetch_crypto():
@@ -22,9 +22,9 @@ with DAG(
     catchup=False
 ) as dag:
 
-    weather = PythonOperator(
-        task_id="weather",
-        python_callable=fetch_weather
+    nasa = PythonOperator(
+        task_id="nasa",
+        python_callable=fetch_nasa
     )
 
     crypto = PythonOperator(
@@ -37,4 +37,4 @@ with DAG(
         python_callable=fetch_country
     )
 
-    weather >> crypto >> country
+    nasa >> crypto >> country
