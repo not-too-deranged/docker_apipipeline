@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
 import psycopg2
+import sys
+
+sys.path.insert(1, '../backend')
 
 st.title("Global Data Dashboard")
 
@@ -17,3 +20,4 @@ df = pd.DataFrame(data, columns=["id", "price", "timestamp"])
 st.subheader("Bitcoin Price")
 
 st.line_chart(df["price"])
+
