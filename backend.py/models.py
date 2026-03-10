@@ -13,8 +13,10 @@ def create_tables():
     )
     """)
 
+    #TODO: Change this to work with NASA data
+
     cur.execute("""
-    CREATE TABLE IF NOT EXISTS weather (
+    CREATE TABLE IF NOT EXISTS nasa (
         id SERIAL PRIMARY KEY,
         temperature FLOAT,
         city TEXT,
