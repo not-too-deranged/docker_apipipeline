@@ -2,6 +2,16 @@
 
 Dieses Projekt sammelt Daten aus öffentlichen APIs mit Apache Airflow und visualisiert sie in einem Dashboard.
 
+## Group members
+
+Jan Merz <br>
+Celina Riegel <br>
+Jasmin Steidl <br>
+
+## Status
+
+Work in Progress
+
 ## APIs
 
 - tbd
@@ -18,3 +28,4 @@ Dieses Projekt sammelt Daten aus öffentlichen APIs mit Apache Airflow und visua
 
 ```bash
 docker compose up -d
+
