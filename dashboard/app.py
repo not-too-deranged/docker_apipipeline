@@ -6,7 +6,7 @@ import sys
 
 sys.path.insert(1, '../backend')
 
-from backend.models import create_tables
+import create_tables
 
 create_tables()
 
