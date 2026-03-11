@@ -13,14 +13,16 @@ def create_tables():
     )
     """)
 
-    #TODO: Change this to work with NASA data
 
     cur.execute("""
     CREATE TABLE IF NOT EXISTS nasa (
         id SERIAL PRIMARY KEY,
-        temperature FLOAT,
-        city TEXT,
-        timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        date DATE,
+        start_date DATE,
+        end_date DATE,
+        count INT,
+        thumbs BOOLEAN,
+  
     )
     """)
 

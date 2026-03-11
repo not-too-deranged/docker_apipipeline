@@ -4,7 +4,7 @@ from datetime import datetime
 import requests
 
 def fetch_nasa():
-    r = requests.get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
+    r = requests.get("https://api.nasa.gov/planetary/apod?api_key=54HEklHMM96BTb1gY16hUdOImJB3sZq3m0j9s9Vm")
     print(r.json())
 
 def fetch_crypto():
