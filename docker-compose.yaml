@@ -54,6 +54,8 @@ services:
     container_name: dashboard
     depends_on:
       - postgres
+    volumes:
+      - ./dashboard:/app
     ports:
       - "8501:8501"
 
