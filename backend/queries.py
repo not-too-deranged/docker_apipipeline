@@ -65,7 +65,7 @@ def insert_country(name, population):
     cur.close()
     conn.close()
 
-def get_countries():
+def get_country_data():
     conn = get_connection()
     cur = conn.cursor()
 
