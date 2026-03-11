@@ -1,12 +1,10 @@
 import streamlit as st
 import pandas as pd
 import psycopg2
-import sys
 
 
-sys.path.insert(1, '../backend')
 
-import create_tables
+from backend.models import create_tables
 
 create_tables()
 
