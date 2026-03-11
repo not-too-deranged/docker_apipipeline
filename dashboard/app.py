@@ -4,11 +4,11 @@ import psycopg2
 import sys
 
 
-create_tables()
-
 sys.path.insert(1, '../backend')
 
 from backend.models import create_tables
+
+create_tables()
 
 
 st.title("Global Data Dashboard")
