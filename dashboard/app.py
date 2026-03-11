@@ -28,11 +28,11 @@ from backend.queries import get_nasa_data
 
 nasa_data = get_nasa_data()
 
-nasa_df = pd.DataFrame(nasa_data, columns=["id", "temperature", "city", "timestamp"])
+nasa_df = pd.DataFrame(nasa_data, columns=["id", "date", "start_date", "end_date", "count", "thumbs"])
 
-st.subheader("NASA Temperature Data")
+st.subheader("NASA Data")
 
-st.line_chart(nasa_df["temperature"])
+st.line_chart(nasa_df["count"])
 
 from backend.queries import get_country_data
 

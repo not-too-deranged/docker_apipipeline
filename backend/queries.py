@@ -32,8 +32,8 @@ def insert_nasa_data(date, start_date, end_date, count, thumbs):
     cur = conn.cursor()
 
     cur.execute(
-        "INSERT INTO nasa (date, start_date, end_date, count, thumbs, api_key) VALUES (%s, %s, %s, %s, %s, %s)",
-        (date, start_date, end_date, count, thumbs, api_key)
+        "INSERT INTO nasa (date, start_date, end_date, count, thumbs) VALUES (%s, %s, %s, %s, %s)",
+        (date, start_date, end_date, count, thumbs)
     )
 
     conn.commit()

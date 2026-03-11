@@ -21,7 +21,7 @@ def create_tables():
         start_date DATE,
         end_date DATE,
         count INT,
-        thumbs BOOLEAN,
+        thumbs BOOLEAN
   
     )
     """)
