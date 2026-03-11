@@ -10,11 +10,11 @@ sys.path.insert(1, '../backend')
 
 st.title("Global Data Dashboard")
 
-st.write("API Data Visualization")
+#st.write("API Data Visualization")
 
 from backend.queries import get_crypto_data
 
-st.title("Global Data Dashboard")
+st.write("test")
 
 data = get_crypto_data()
 
